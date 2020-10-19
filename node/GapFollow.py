@@ -157,6 +157,6 @@ def main():
     rospy.spin()
 
 # O drive_pub foi declarado global para que ele possa ser usado tando no construtor quanto na funcao. callback
-gap_pub = rospy.Publisher('/drive', AckermannDriveStamped, queue_size=10)
+gap_pub = rospy.Publisher('/ego_id/drive', AckermannDriveStamped, queue_size=10)
 
 main()
